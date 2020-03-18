@@ -15,7 +15,7 @@ public class Tank {
 	Color oliveGreen;
 	// bovenstuk van de tank: halve cikel (c1)
 	int xc1, yc1;
-	int R1, R2; 
+	int R1, R2;
 	Color black;
 
 	public Tank() {
@@ -29,18 +29,16 @@ public class Tank {
 		this.abr1 = 30;
 		this.darkGrey = new Color(105, 105, 105);
 		// specifieke waarden voor rechthoek r2
-		this.lr2 = lr1-30;
-		this.br2 = br1-12;
+		this.lr2 = lr1 - 30;
+		this.br2 = br1 - 12;
 		this.xr2 = xr1 + (lr1 - lr2) / 2;
 		this.yr2 = (yr1 - br2);
 		this.oliveGreen = new Color(85, 107, 47);
 		// specifieke waarden voor halve cirkel c3
-		this.R1 = (3*lr2/4);
-		this.R2 = (lr2/2);
-		this.xc1 = xr2 + ((lr2 - R1)/2); 
-		this.yc1 = (yr2)-((R2)/2);
-		 
-		
+		this.R1 = (3 * lr2 / 4);
+		this.R2 = (lr2 / 2);
+		this.xc1 = xr2 + ((lr2 - R1) / 2);
+		this.yc1 = (yr2) - ((R2) / 2);
 
 	}
 

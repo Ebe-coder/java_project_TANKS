@@ -9,8 +9,10 @@ import tanksTheGame.Tank;
 @SuppressWarnings("serial")
 public class TankPanel extends JPanel {
 	ArrayList<Tank> tanks;
+	Terrain terrain;
 
 	public TankPanel() {
+		terrain = new Terrain();
 		tanks = new ArrayList<Tank>();
 		for (int i = 0; i < 2; i++) {
 			Tank A = new Tank();
@@ -21,10 +23,11 @@ public class TankPanel extends JPanel {
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-
+		terrain.draw(g);
 		for (Tank b : tanks) {
 			b.draw(g);
 		}
+
 	}
 
 	public static void main(String[] args) {
