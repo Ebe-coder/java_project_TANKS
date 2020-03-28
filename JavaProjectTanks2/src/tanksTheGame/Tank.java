@@ -6,7 +6,7 @@ import java.awt.Graphics;
 public class Tank {
 	// rupsbanden: in afgeronde rechthoek (r1)
 	int lr1, br1;
-	int xr1, yr1; // de y-coordinaat is dezelfde voor de rechthoek en de twee cirkels
+	int xr1, yr1;
 	int alr1, abr1;
 	Color darkGrey;
 	// middenstuk van de tank: rechthoek (r2)

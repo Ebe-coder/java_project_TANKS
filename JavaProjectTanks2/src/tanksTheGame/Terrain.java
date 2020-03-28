@@ -21,5 +21,4 @@ public class Terrain extends Tank {
 		g.setColor(green);
 		g.fillRect(xrt, yrt, lrt, brt);
 	}
-
 }
